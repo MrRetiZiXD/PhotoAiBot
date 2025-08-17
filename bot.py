@@ -3,9 +3,9 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from logic import FusionBrainAPI
 
-TOKEN = "7570862810:AAHLnYjq6HzAF8LEe9h5XPQ4-NKCysO3ZYQ"
-API_KEY = "2CD3909F6918E287A13414C3F44F5E19"
-SECRET_KEY = "C2609E2C0D89645FE07B69DA92E40575"
+TOKEN = ""
+API_KEY = ""
+SECRET_KEY = ""
 
 fusion_brain = FusionBrainAPI(
     url='https://api-key.fusionbrain.ai/',
@@ -64,4 +64,5 @@ def main():
     app.run_polling()
 
 if __name__ == '__main__':
+
     main()
