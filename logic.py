@@ -56,9 +56,10 @@ class FusionBrainAPI:
 
 
 if __name__ == '__main__':
-    api = FusionBrainAPI('https://api-key.fusionbrain.ai/', '2CD3909F6918E287A13414C3F44F5E19', 'C2609E2C0D89645FE07B69DA92E40575')
+    api = FusionBrainAPI('https://api-key.fusionbrain.ai/', '', '')
     pipeline_id = api.get_pipeline()
     uuid = api.generate("Пушистый кот в скафандре", pipeline_id)
     files = api.check_generation(uuid)[0]
+
 
     api.saveimage(files, "Generated_image.png")
